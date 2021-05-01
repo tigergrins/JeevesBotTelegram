@@ -9,6 +9,10 @@ const obsceneLanguage = {
     thirdLevel: ['ты оборзел', 'фильтруй базар']
 };
 
+bot.start((ctx) =>
+    ctx.reply('Я готово вас слушать')
+);
+
 bot.on('message', (ctx) => {
     let msgLowerCase = ctx.message.text.toLowerCase();
 
@@ -23,3 +27,5 @@ bot.on('message', (ctx) => {
 
 // Запускает бота
 bot.launch();
+
+console.log('Bot is launched');
