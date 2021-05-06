@@ -1,7 +1,10 @@
-const { Telegraf } = require('telegraf');
-const dotEnv = require('dotenv').config();
 
-const bot = new Telegraf(process.env.TOKEN);
+const { Telegraf } = require('telegraf');
+// const dotEnv = require('dotenv').config();
+const TOKEN = '1737401577:AAE8Nphx-pBlcQZYlt30nki7vBaDNlviAUk';
+// const obsceneLanguage = require('./obscene_language.js');
+
+const bot = new Telegraf(TOKEN);
 
 const obsceneLanguage = {
     firstLevel: ["жопа", "писюн", "дурак", "идиот", "имбецил", "задница", "сука", "чмо", "урод", "кретин"],
